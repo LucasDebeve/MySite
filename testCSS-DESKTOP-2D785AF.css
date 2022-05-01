@@ -1,0 +1,253 @@
+/* Elements principaux de la page*/
+body
+{
+	font-family:'Trebuchet MS',Arial,sans-serif;
+	color:black;
+}
+#bloc_page
+{
+	width:900px;
+	margin:auto;
+}
+section h1,footer,h1,nav a
+{
+	font-family:Comics San MS,serif;
+	font-weight:normal;
+	text-transform:uppercase;
+}
+/*Header*/
+header
+{
+	display:flex;
+	justify-content:space-between;
+	align-items:flex-end;
+}
+#titre_principal
+{
+	display:flex;
+	flex-direction:column;
+}
+#logo
+{
+	display:flex;
+	flex-direction:column;
+}
+#logo img
+{
+	width:168px;
+	height:112;
+}
+header h1
+{
+	font-size: 3em;
+	font-family:'Trebuchet MS',Arial;
+	font-weight:bold;
+	margin: 0 0 0 10px;
+}
+header h2
+{
+	font-size:1.1em;
+	margin-top: 0px;
+	font-weight:normal;
+}
+/*Navigation*/
+
+.navbar
+{
+	overflow:hidden;
+	background-color:#333;
+}
+.navbar a
+{
+	float:left;
+	font-size: 16px;
+	color:white;
+	text-align:center;
+	padding:14px 16px;
+	text-decoration:none;
+}
+.dropdown
+{
+	float:left;
+	overflow:hidden;
+}
+.dropdown .dropbtn
+{
+	font-size:16px;
+	border: none;
+	outline:none;
+	color:white;
+	padding:14px 16px;
+	background-color: inherit;
+	font-family:inherit;
+	margin=0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn
+{
+	background-color:#4c6b9c;
+}
+.dropdown-content
+{
+	display:none;
+	position:absolute;
+	background-color:#f9f9f9;
+	min-width:160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index:1;
+}
+.dropdown-content a
+{
+	float: none;
+	color:black;
+	padding:12px 16px;
+	text-decoration:none;
+	display:block;
+	text-align:left;
+}
+.dropdown-content a:hover
+{
+	background-color:#84abe8;
+}
+.dropdown:hover .dropdown-content
+{
+	display:block;
+}
+
+/*Bannière image*/
+#banniere_image
+{
+	margin-top:15px;
+	height:200px;
+	border-radius:5px;
+	background: url('images/shanks.png') top center no-repeat;
+	background-attachment:fixed;
+	position:relative;
+	box-shadow:0px 4px 4px black;
+	margin-bottom:25x;
+}
+#banniere_description
+{
+    position: absolute;
+    bottom: 0;
+    border-radius: 0px 0px 5px 5px;
+    width: 99.5%;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 4px;
+    background-color: rgba(24,24,24,0.8);
+    color: white;
+    font-size: 0.8em;
+    
+}
+.bouton_rouge
+{
+    height: 25px;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    border: 1px solid #4c6b9c;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 3px 8px 0px 8px;
+    color: white;
+    text-decoration: none;
+}
+
+
+/* Corps */
+
+.home-pres
+{
+	display: flex;
+	flex-direction:line;
+    margin-top:40px;
+	margin-bottom: 20px;
+}
+
+article, aside
+{
+    text-align: justify;
+}
+
+article
+{
+    margin-right: 20px;
+    flex: 3;
+}
+
+.ico_categorie
+{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+article p
+{
+    font-size: 0.8em;
+}
+
+aside
+{
+    flex: 1.2;
+    position: relative;
+    background-color: #4c6b9c;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+    font-size: 0.9em;
+}
+aside h1
+{
+	font-size:18px;
+	font-family:'Trebuchet MS',Arial;
+}
+
+#fleche_bulle
+{
+    position: absolute;
+    top: 100px;
+    left: -12px;
+}
+
+#photo_lucas
+{
+    text-align: center;
+}
+
+#photo_lucas img
+{
+    border: 1px solid #181818;
+}
+
+aside img
+{
+    margin-right: 5px;
+}
+
+h1
+{
+	font-size:30px;
+	
+}
+
+/* Pagination links */
+
+
+.pagination a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  transition: background-color .3s;
+}
+
+/* Style the active/current link */
+.pagination a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+/* Add a grey background color on mouse-over */
+.pagination a:hover:not(.active) {background-color: #ddd;}
